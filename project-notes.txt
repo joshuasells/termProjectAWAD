@@ -1,0 +1,7 @@
+Colors:
+
+111118 - black shade
+9B2808 - red
+3C68E2 - light blue shade
+F5F5F5 - white shade
+262C40 - dark blue shade
