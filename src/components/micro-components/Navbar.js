@@ -27,6 +27,10 @@ class Navbar extends React.Component {
     }
   }
 
+  nullifyLinks(e) {
+    e.preventDefault();
+  }
+
 
   render() {
     return (
@@ -34,7 +38,7 @@ class Navbar extends React.Component {
         {/* <div className="Navbar__logo">
           <img src={bookStoreLogo} alt="Logo" height="50px"></img>
         </div> */}
-        <Logo className="Navbar__logo" height="48px" />
+        <Logo className="Navbar__logo" />
         <a href="#" className="Navbar__toggle-button" onClick={this.toggleHamburger}>
           <span className="Navbar__bar"></span>
           <span className="Navbar__bar"></span>
@@ -42,12 +46,12 @@ class Navbar extends React.Component {
         </a>
         <div className={this.state.classes}>
           <ul>
-            <li><a href="javascript:;">SHOP</a></li>
-            <li><a href="javascript:;">ACCOUNT</a></li>
-            <li><a href="javascript:;">ADMIN</a></li>
-            <li><a href="javascript:;">CART</a></li>
-            <li><a href="javascript:;">SIGN IN</a></li>
-            <li><a href="javascript:;">SIGN OUT</a></li>
+            <li><a href="" onClick={this.nullifyLinks}>SHOP</a></li>
+            <li><a href="" onClick={this.nullifyLinks}>ACCOUNT</a></li>
+            <li><a href="" onClick={this.nullifyLinks}>ADMIN</a></li>
+            <li><a href="" onClick={this.nullifyLinks}>CART</a></li>
+            <li><a href="" onClick={this.nullifyLinks}>SIGN IN</a></li>
+            <li><a href="" onClick={this.nullifyLinks}>SIGN OUT</a></li>
           </ul>
         </div>
       </nav>

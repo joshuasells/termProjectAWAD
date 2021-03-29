@@ -13,12 +13,19 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #262C40;
+  background-color: #111118;
   color: #F5F5F5;
+  font-weight: bold;
+  /* border-bottom: 1px solid #111118; */
 }
 
 .Navbar__logo {
   margin-right: auto;
+  height: 50px;
+}
+
+.Navbar__logo img {
+  height: 100%;
 }
 
 .Navbar__navbar-links ul {
@@ -39,7 +46,7 @@ body {
 }
 
 .Navbar__navbar-links li:hover {
-  background-color: #3C68E2;
+  background-color: #262C40;
 }
 
 .Navbar__toggle-button {
