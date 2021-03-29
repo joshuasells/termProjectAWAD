@@ -11,6 +11,7 @@
   display: block;
   margin: auto;
   max-width: 90%;
+  max-height: 80px;
 }
 
 .Login__container {

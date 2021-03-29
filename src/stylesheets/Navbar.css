@@ -16,6 +16,8 @@ body {
   background-color: #111118;
   color: #F5F5F5;
   font-weight: bold;
+  max-width: 1800px;
+  margin: auto;
   /* border-bottom: 1px solid #111118; */
 }
 
