@@ -4,7 +4,7 @@ import '../../stylesheets/TextInput.css';
 function TextInput(props) {
   return (
     <div className="TextInput__">
-      <label htmlFor={props.htmlFor}>{props.htmlFor}</label>
+      <label htmlFor={props.label}>{props.label}</label>
       <input
         type={props.type}
         name={props.name}

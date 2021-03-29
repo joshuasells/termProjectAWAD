@@ -1,0 +1,15 @@
+.Button__ input {
+  display: block;
+  width: 100%;
+  background-color: #3C68E2;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #F5F5F5;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.Button__ input:hover {
+  background-color: #262C40;
+}
