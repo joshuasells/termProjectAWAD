@@ -1,0 +1,20 @@
+.TextInput__ input {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid#EBEBEB;
+  border-radius: 5px;
+  outline: none;
+}
+
+.TextInput__ input:focus,
+.TextInput__ input:active {
+  border: 1px solid #3C68E2;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #8cbcfe;
+}
+
+.TextInput__ label {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
