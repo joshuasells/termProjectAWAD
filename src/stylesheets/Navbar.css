@@ -8,12 +8,15 @@ body {
   padding: 0;
 }
 
+.Navbar__ {
+  background-color: #111118;
+}
+
 .Navbar__navbar {
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #111118;
   color: #F5F5F5;
   font-weight: bold;
   max-width: 1800px;

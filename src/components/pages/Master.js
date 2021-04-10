@@ -10,7 +10,6 @@ function Master(props) {
     <>
       <Navbar />
       <Header />
-      <Login />
     </>
   )
 }
