@@ -34,6 +34,13 @@
   margin-top: 30px;
 }
 
+.Login__ a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: ;
+}
+
 @media (max-width: 500px) {
   .Login__container {
     width: 100%;

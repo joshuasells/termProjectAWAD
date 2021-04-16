@@ -5,7 +5,6 @@ import TextInput from '../micro-components/TextInput';
 import Button from '../micro-components/Button';
 import Header from '../micro-components/Header';
 import Footer from '../micro-components/Footer';
-import CreateAccount from '../micro-components/CreateAccount';
 
 function Master(props) {
   return (
