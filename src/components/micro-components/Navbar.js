@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../stylesheets/Navbar.css';
 import Logo from './Logo';
 
@@ -36,8 +37,8 @@ class Navbar extends React.Component {
     return (
       <div className="Navbar__">
         <nav className="Navbar__navbar">
-          <Logo className="Navbar__logo" />
-          <a href="#" className="Navbar__toggle-button" onClick={this.toggleHamburger}>
+          <Link className="Navbar__logo" to="/"><Logo className="Navbar__logo" /></Link>
+          <a href className="Navbar__toggle-button" onClick={this.toggleHamburger}>
             <span className="Navbar__bar"></span>
             <span className="Navbar__bar"></span>
             <span className="Navbar__bar"></span>
@@ -48,8 +49,8 @@ class Navbar extends React.Component {
               <li><a href="" onClick={this.nullifyLinks}>ACCOUNT</a></li>
               <li><a href="" onClick={this.nullifyLinks}>ADMIN</a></li>
               <li><a href="" onClick={this.nullifyLinks}>CART</a></li>
-              <li><a href="" onClick={this.nullifyLinks}>SIGN IN</a></li>
-              <li><a href="" onClick={this.nullifyLinks}>SIGN OUT</a></li>
+              <li><Link to="/signin">SIGN IN</Link></li>
+              <li><a href="" onClick={this.nullifyLinks}>CREATE AN ACCOUNT</a></li>
             </ul>
           </div>
         </nav>

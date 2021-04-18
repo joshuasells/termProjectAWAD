@@ -24,6 +24,8 @@ body {
   /* border-bottom: 1px solid #111118; */
 }
 
+
+
 .Navbar__logo {
   margin-right: auto;
   height: 50px;
@@ -63,6 +65,7 @@ body {
   justify-content: space-between;
   width: 31px;
   height: 21px;
+  cursor: pointer;
 }
 
 .Navbar__toggle-button .Navbar__bar {
