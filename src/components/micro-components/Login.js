@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../stylesheets/Login.css';
 import Logo from './Logo';
 import TextInput from './TextInput';
@@ -13,7 +14,7 @@ const LoginForm = (props) => {
         <TextInput label="Password" type="password" name="password" id="password" />
         <Button value="SIGN IN" />
       </form>
-      <button onClick={props.handleClick}>Create an Account</button>
+      <Link to="/createaccount">Create an Account Here</Link>
     </>
   );
 };
@@ -31,47 +32,31 @@ const CreateAccountForm = (props) => {
         <TextInput label="Confirm Password" type="password" name="cfmPassword" id="cfmPassword" />
         <Button value="Create Account" />
       </form>
-      <button onClick={props.handleClick}>Login Here</button>
+      <Link to="/signin">Login Here</Link>
     </>
   );
-}
+};
 
-class Login extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      login: true,
-    };
-    this.handleClick = this.handleClick.bind(this);
+const Login = (props) => {
+  
+  let form;
+  if (props.login) {
+    form = <LoginForm />
   }
-
-  handleClick(e) {
-    e.preventDefault();
-    this.setState({ login: !this.state.login });
+  else {
+    form = <CreateAccountForm />
   }
-
-  render() {
-
-    let form;
-    if (this.state.login) {
-      form = <LoginForm handleClick={this.handleClick}/>
-    }
-    else {
-      form = <CreateAccountForm  handleClick={this.handleClick}/>
-    }
-    
-
-    return (
-      <>
-        <div className="Login__">
-          <Logo className="Login__Logo" color="light" />
-          <div className="Login__container">
-            {form}
-          </div>
+  
+  return (
+    <>
+      <div className="Login__">
+        <Logo className="Login__Logo" color="light" />
+        <div className="Login__container">
+          {form}
         </div>
-      </>
-    );
-  }
-}
+      </div>
+    </>
+  );
+};
 
 export default Login;

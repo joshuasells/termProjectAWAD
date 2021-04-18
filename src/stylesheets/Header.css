@@ -30,3 +30,7 @@
 .Header__ img {
   min-width: 10px;
 }
+
+.Header__ a {
+  text-decoration: none;
+}

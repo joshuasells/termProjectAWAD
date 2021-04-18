@@ -11,6 +11,7 @@ class Navbar extends React.Component {
     };
 
     this.toggleHamburger = this.toggleHamburger.bind(this);
+    this.closeNav = this.closeNav.bind(this);
   }
 
   toggleHamburger(e) {
@@ -28,8 +29,12 @@ class Navbar extends React.Component {
     }
   }
 
-  nullifyLinks(e) {
-    e.preventDefault();
+  closeNav(e) {
+    if (this.state.classes === "Navbar__navbar-links Navbar__active") {
+      this.setState({
+        classes: "Navbar__navbar-links"
+      });
+    }
   }
 
 
@@ -45,12 +50,12 @@ class Navbar extends React.Component {
           </a>
           <div className={this.state.classes}>
             <ul>
-              <li><a href="" onClick={this.nullifyLinks}>SHOP</a></li>
-              <li><a href="" onClick={this.nullifyLinks}>ACCOUNT</a></li>
-              <li><a href="" onClick={this.nullifyLinks}>ADMIN</a></li>
-              <li><a href="" onClick={this.nullifyLinks}>CART</a></li>
-              <li><Link to="/signin">SIGN IN</Link></li>
-              <li><a href="" onClick={this.nullifyLinks}>CREATE AN ACCOUNT</a></li>
+              <li><a href="" onClick={this.closeNav}>SHOP</a></li>
+              <li><a href="" onClick={this.closeNav}>ACCOUNT</a></li>
+              <li><a href="" onClick={this.closeNav}>ADMIN</a></li>
+              <li><a href="" onClick={this.closeNav}>CART</a></li>
+              <li><Link to="/signin" onClick={this.closeNav}>SIGN IN</Link></li>
+              <li><Link to="/createaccount" onClick={this.closeNav}>CREATE AN ACCOUNT</Link></li>
             </ul>
           </div>
         </nav>

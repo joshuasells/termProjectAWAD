@@ -14,7 +14,16 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Header} />
-            <Route exact path="/signin" component={Login} />
+            <Route exact path="/signin" render={(props) => {
+              return (
+                <Login login={true} />
+              )
+            }} />
+            <Route exact path="/createaccount" render={(props) => {
+              return (
+                <Login login={false} />
+              )
+            }} />
           </Switch>
           <Footer />
         </div>
