@@ -1,3 +1,16 @@
+.Footer__ .content, .Footer__ .allRightsReserved {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.Footer__ .content-wrapper {
+  background-color: #262C40;
+}
+
+.Footer__ .arr-wrapper {
+  background-color: #111118;
+}
+
 .Footer__ .Logo {
     height: 30px;
 }

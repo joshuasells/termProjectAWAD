@@ -1,0 +1,12 @@
+.Shop__ {
+  background-color: #F5F5F5;
+}
+
+.Shop__ .wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+  max-width: 1800px;
+  margin: auto;
+}
