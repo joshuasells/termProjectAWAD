@@ -1,0 +1,10 @@
+POST http://localhost:4000/app/createaccount
+Content-Type: application/json
+
+{
+  "firstName": "Joshua",
+  "lastName": "Sells",
+  "username": "paste",
+  "email": "yaboi@noice.com",
+  "password": "Blink-18yourmum"
+}
