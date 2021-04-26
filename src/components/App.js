@@ -7,6 +7,7 @@ import Footer from './micro-components/Footer';
 import Shop from './micro-components/Shop';
 import shopItems from '../data/shopItems.json';
 import ProductDetails from './micro-components/ProductDetails';
+import Welcome from './micro-components/Welcome';
 
 class App extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Header} />
+            <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/signin" render={(props) => {
               return (
                 <Login login={true} />

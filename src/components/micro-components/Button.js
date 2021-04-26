@@ -4,7 +4,7 @@ import '../../stylesheets/Button.css';
 function Button(props) {
   return (
     <div className="Button__">
-      <input type="button" value={props.value}></input>
+      <input type="submit" value={props.value}></input>
     </div>
   );
 }

@@ -30,7 +30,7 @@
   padding-bottom: 20px;
 }
 
-.Login__container input[type="button"] {
+.Login__container input[type="submit"] {
   margin-top: 30px;
 }
 
