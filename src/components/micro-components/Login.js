@@ -31,7 +31,7 @@ const CreateAccountForm = (props) => {
         <TextInput label="Email" type="text" name="email" value={props.stateInfo.email} id="email" />
         <TextInput label="Password" type="password" name="password" value={props.stateInfo.password} id="password" />
         <TextInput label="Confirm Password" type="password" name="cfmPassword" value={props.stateInfo.cfmPassword} id="cfmPassword" />
-        <Button value="Create Account" />
+        <Button value="Create Account" id="createAccountbtn"/>
       </form>
       <Link to="/signin">Login Here</Link>
     </>

@@ -50,12 +50,12 @@ class Navbar extends React.Component {
           </a>
           <div className={this.state.classes}>
             <ul>
-              <li><Link to="/shop" onClick={this.closeNav} title="navLink">SHOP</Link></li>
+              <li><Link to="/shop" onClick={this.closeNav}>SHOP</Link></li>
               <li><a href="" onClick={this.closeNav}>ACCOUNT</a></li>
               <li><a href="" onClick={this.closeNav}>ADMIN</a></li>
               <li><a href="" onClick={this.closeNav}>CART</a></li>
               <li><Link to="/signin" onClick={this.closeNav}>SIGN IN</Link></li>
-              <li><Link to="/createaccount" onClick={this.closeNav}>CREATE AN ACCOUNT</Link></li>
+              <li><Link to="/createaccount" onClick={this.closeNav} id="createAccountLink">CREATE AN ACCOUNT</Link></li>
             </ul>
           </div>
         </nav>
