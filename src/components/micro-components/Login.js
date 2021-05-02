@@ -79,7 +79,8 @@ class Login extends Component {
     }
 
     axios.post('http://localhost:4000/app/createaccount', newUser)
-      .then(response => console.log(response.data));
+      .then(response => { console.log(response.data) })
+      .catch(error => { console.log(error); });
 
     window.location = '/welcome';
   }
